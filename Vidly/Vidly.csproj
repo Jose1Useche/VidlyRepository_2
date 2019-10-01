@@ -165,7 +165,6 @@
     <Compile Include="Migrations\201909190155323_AddRequiredToNameColumnInMembershipTypeTable.Designer.cs">
       <DependentUpon>201909190155323_AddRequiredToNameColumnInMembershipTypeTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201909190212171_AddBirthdatePropertyToCustomerTable.cs" />
     <Compile Include="Migrations\201909190237558_AddPropertiesToMoviesTableAndCreateGenreTable.cs" />
     <Compile Include="Migrations\201909190237558_AddPropertiesToMoviesTableAndCreateGenreTable.Designer.cs">
       <DependentUpon>201909190237558_AddPropertiesToMoviesTableAndCreateGenreTable.cs</DependentUpon>
@@ -181,6 +180,10 @@
     <Compile Include="Migrations\201909300223211_AddNamePropertyFromCustomerTableHasRequired.cs" />
     <Compile Include="Migrations\201909300223211_AddNamePropertyFromCustomerTableHasRequired.Designer.cs">
       <DependentUpon>201909300223211_AddNamePropertyFromCustomerTableHasRequired.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910011825510_AddBirthdatePropertyToCustomerTable.cs" />
+    <Compile Include="Migrations\201910011825510_AddBirthdatePropertyToCustomerTable.Designer.cs">
+      <DependentUpon>201910011825510_AddBirthdatePropertyToCustomerTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -282,9 +285,6 @@
     <EmbeddedResource Include="Migrations\201909190155323_AddRequiredToNameColumnInMembershipTypeTable.resx">
       <DependentUpon>201909190155323_AddRequiredToNameColumnInMembershipTypeTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201909190212171_AddBirthdatePropertyToCustomerTable.resx">
-      <DependentUpon>201909190212171_AddBirthdatePropertyToCustomerTable.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909190237558_AddPropertiesToMoviesTableAndCreateGenreTable.resx">
       <DependentUpon>201909190237558_AddPropertiesToMoviesTableAndCreateGenreTable.cs</DependentUpon>
     </EmbeddedResource>
@@ -296,6 +296,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909300223211_AddNamePropertyFromCustomerTableHasRequired.resx">
       <DependentUpon>201909300223211_AddNamePropertyFromCustomerTableHasRequired.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910011825510_AddBirthdatePropertyToCustomerTable.resx">
+      <DependentUpon>201910011825510_AddBirthdatePropertyToCustomerTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
