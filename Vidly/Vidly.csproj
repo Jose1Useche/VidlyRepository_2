@@ -178,14 +178,6 @@
     <Compile Include="Migrations\201909190300480_AddPropertiesToMoviesTableAndCreateGenreTable1.Designer.cs">
       <DependentUpon>201909190300480_AddPropertiesToMoviesTableAndCreateGenreTable1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201909221527368_ChangingTypeOfBirthdayPropertyInCustomersTable.cs" />
-    <Compile Include="Migrations\201909221527368_ChangingTypeOfBirthdayPropertyInCustomersTable.Designer.cs">
-      <DependentUpon>201909221527368_ChangingTypeOfBirthdayPropertyInCustomersTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201909221539516_ChangingTypeOfBirthdayPropertyInCustomersTable1.cs" />
-    <Compile Include="Migrations\201909221539516_ChangingTypeOfBirthdayPropertyInCustomersTable1.Designer.cs">
-      <DependentUpon>201909221539516_ChangingTypeOfBirthdayPropertyInCustomersTable1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201909300223211_AddNamePropertyFromCustomerTableHasRequired.cs" />
     <Compile Include="Migrations\201909300223211_AddNamePropertyFromCustomerTableHasRequired.Designer.cs">
       <DependentUpon>201909300223211_AddNamePropertyFromCustomerTableHasRequired.cs</DependentUpon>
@@ -301,12 +293,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909190300480_AddPropertiesToMoviesTableAndCreateGenreTable1.resx">
       <DependentUpon>201909190300480_AddPropertiesToMoviesTableAndCreateGenreTable1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201909221527368_ChangingTypeOfBirthdayPropertyInCustomersTable.resx">
-      <DependentUpon>201909221527368_ChangingTypeOfBirthdayPropertyInCustomersTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201909221539516_ChangingTypeOfBirthdayPropertyInCustomersTable1.resx">
-      <DependentUpon>201909221539516_ChangingTypeOfBirthdayPropertyInCustomersTable1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909300223211_AddNamePropertyFromCustomerTableHasRequired.resx">
       <DependentUpon>201909300223211_AddNamePropertyFromCustomerTableHasRequired.cs</DependentUpon>

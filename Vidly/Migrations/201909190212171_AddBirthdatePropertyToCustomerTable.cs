@@ -7,12 +7,12 @@ namespace Vidly.Migrations
     {
         public override void Up()
         {
-            AlterColumn("dbo.Customers", "Birthdate", c => c.String(maxLength: 50));
+            AddColumn("dbo.Customers", "Birthdate", c => c.String(maxLength: 50));
         }
         
         public override void Down()
         {
-            AlterColumn("dbo.Customers", "Birthdate", c => c.DateTime(nullable: false));
+            DropColumn("dbo.Customers", "Birthdate");
         }
     }
 }
