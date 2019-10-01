@@ -38,11 +38,12 @@ namespace Vidly.Controllers
         public ActionResult NewMovie(int id)
         {
             MovieGenres newMovieGenres;
-
+             
             if(id == 0)
                 newMovieGenres = new MovieGenres
                 {
-                    Genres = _context.Genres.ToList(),
+                    Genres = _context.Genres.ToList()/*,
+                    Movie = new Movie()*/
                 };
             else
             {

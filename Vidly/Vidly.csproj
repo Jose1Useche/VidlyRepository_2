@@ -185,6 +185,14 @@
     <Compile Include="Migrations\201910011825510_AddBirthdatePropertyToCustomerTable.Designer.cs">
       <DependentUpon>201910011825510_AddBirthdatePropertyToCustomerTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910012022016_ChangingReleaseDateAndDateAddedPropertyToDatTimeInMoviesTable.cs" />
+    <Compile Include="Migrations\201910012022016_ChangingReleaseDateAndDateAddedPropertyToDatTimeInMoviesTable.Designer.cs">
+      <DependentUpon>201910012022016_ChangingReleaseDateAndDateAddedPropertyToDatTimeInMoviesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910012026121_ChangingReleaseDateAndDateAddedPropertyToDatTimeInMoviesTable1.cs" />
+    <Compile Include="Migrations\201910012026121_ChangingReleaseDateAndDateAddedPropertyToDatTimeInMoviesTable1.Designer.cs">
+      <DependentUpon>201910012026121_ChangingReleaseDateAndDateAddedPropertyToDatTimeInMoviesTable1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -299,6 +307,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910011825510_AddBirthdatePropertyToCustomerTable.resx">
       <DependentUpon>201910011825510_AddBirthdatePropertyToCustomerTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910012022016_ChangingReleaseDateAndDateAddedPropertyToDatTimeInMoviesTable.resx">
+      <DependentUpon>201910012022016_ChangingReleaseDateAndDateAddedPropertyToDatTimeInMoviesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910012026121_ChangingReleaseDateAndDateAddedPropertyToDatTimeInMoviesTable1.resx">
+      <DependentUpon>201910012026121_ChangingReleaseDateAndDateAddedPropertyToDatTimeInMoviesTable1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
