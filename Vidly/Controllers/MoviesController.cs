@@ -42,8 +42,8 @@ namespace Vidly.Controllers
             if(id == 0)
                 newMovieGenres = new MovieGenres
                 {
-                    Genres = _context.Genres.ToList()/*,
-                    Movie = new Movie()*/
+                    Genres = _context.Genres.ToList(),
+                    Movie = new Movie()
                 };
             else
             {
@@ -60,8 +60,20 @@ namespace Vidly.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Movie movie)
         {
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new MovieGenres
+                {
+                    Movie = movie,
+                    Genres = _context.Genres.ToList()
+                };
+
+                return View("NewMovie", viewModel);
+            }
+
             if (movie.Id == 0)
                 _context.Movies.Add(movie);
             else
