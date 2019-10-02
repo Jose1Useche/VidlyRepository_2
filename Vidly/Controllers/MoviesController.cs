@@ -42,8 +42,7 @@ namespace Vidly.Controllers
             if(id == 0)
                 newMovieGenres = new MovieGenres
                 {
-                    Genres = _context.Genres.ToList(),
-                    Movie = new Movie()
+                    Genres = _context.Genres.ToList()
                 };
             else
             {

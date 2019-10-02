@@ -7,7 +7,7 @@
 @{
     var title = "New Movie";
 
-    if (Model.Movie.Id > 0)
+    if (!(Model.Movie is null))
     {
         title = "Edit movie";
     }
@@ -37,13 +37,14 @@
         <label for="Movie_NumberInStock">Number in Stock</label>
         @Html.TextBoxFor(m => m.Movie.NumberInStock, new { @class = "form-control" })
         @Html.ValidationMessageFor(m => m.Movie.NumberInStock)
-    </div>
+    </div> 
     <div class="form-group">
         <label for="Movie_GenreId">Movie Genre</label>
         @Html.DropDownListFor(m => m.Movie.GenreId, new SelectList(Model.Genres, "Id", "Name"), "", new { @class = "form-control" })
         @Html.ValidationMessageFor(m => m.Movie.GenreId)
     </div>
-    @Html.HiddenFor(m => m.Movie.Id)
+    @Html.Hidden("Movie.Id",(Model.Movie != null) ? Model.Movie.Id : 0)
+    @*@Html.HiddenFor(m => m.Movie.Id)*@
     @Html.AntiForgeryToken()
     <button type="submit" class="btn btn-primary">Save</button>
 }
