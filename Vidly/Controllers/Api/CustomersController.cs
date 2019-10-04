@@ -11,7 +11,7 @@ using Vidly.Models;
 
 namespace Vidly.Controllers.Api
 {
-    public class CustomersController : ApiController
+    public class CustomersController : ApiController //Puteando el Codigo
     {
         private VidlyContext _context;
         public CustomersController()
