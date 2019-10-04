@@ -11,7 +11,7 @@ using Vidly.Models;
 
 namespace Vidly.Controllers.Api
 {
-    public class CustomersController : ApiController //Puteando el Codigo
+    public class CustomersController : ApiController
     {
         private VidlyContext _context;
         public CustomersController()
@@ -53,10 +53,10 @@ namespace Vidly.Controllers.Api
 
             return customerDto;
         }
-
+         
         // PUT /api/customers/1
         [HttpPut]
-        public void UpdateCustomer(int id, Customer customer)
+        public void UpdateCustomer(int id, CustomerDto customerDto)
         {
             if (!ModelState.IsValid)
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
@@ -66,10 +66,8 @@ namespace Vidly.Controllers.Api
             if (customerInDb == null)
                 throw new HttpResponseException(HttpStatusCode.NotFound);
 
-            customerInDb.Birthdate = customer.Birthdate;
-            customerInDb.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
-            customerInDb.MembershipTypeId = customer.MembershipTypeId;
-            customerInDb.Name = customer.Name;
+            Mapper.Map(customerDto, customerInDb);//The generic Parameters are grey out because the compiler infer from the objects that passed to
+                                                                         //this method what are the source and the target types.
 
             _context.SaveChanges();
         }
