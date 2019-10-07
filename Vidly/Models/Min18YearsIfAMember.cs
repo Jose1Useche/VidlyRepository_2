@@ -12,8 +12,17 @@ namespace Vidly.Models
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
-            var customer = Mapper.Map<CustomerDto, Customer>((CustomerDto)validationContext.ObjectInstance);
+            var customer = new Customer();
 
+            if (validationContext.ObjectInstance is CustomerDto)
+            {
+                customer = Mapper.Map<CustomerDto, Customer>((CustomerDto)validationContext.ObjectInstance);
+            }
+            else
+            {
+                customer = (Customer)validationContext.ObjectInstance;
+            }
+            
             if (customer.MembershipTypeId == MembershipType.Unknow || customer.MembershipTypeId == MembershipType.PayAsYouGo)
                 return ValidationResult.Success;
 
