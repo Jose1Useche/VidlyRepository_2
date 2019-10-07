@@ -67,7 +67,7 @@ namespace Vidly.Controllers.Api
                 throw new HttpResponseException(HttpStatusCode.NotFound);
 
             Mapper.Map(customerDto, customerInDb);//The generic Parameters are grey out because the compiler infer from the objects that passed to
-                                                                         //this method what are the source and the target types.
+                                                  //this method what are the source and the target types.
 
             _context.SaveChanges();
         }
